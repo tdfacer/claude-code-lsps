@@ -256,6 +256,26 @@
             ".os": "bsl"
           }
         }
+      }
+    },
+    {
+      "name": "terraform-ls",
+      "version": "0.1.0",
+      "source": "./terraform-ls",
+      "description": "Official HashiCorp Terraform language server",
+      "category": "development",
+      "tags": [
+        "terraform",
+        "hcl",
+        "hashicorp",
+        "lsp",
+        "language-server",
+        "infrastructure"
+      ],
+      "author": {
+        "name": "Piebald LLC",
+        "email": "support@piebald.ai"
+      }
     }
   ]
 }
