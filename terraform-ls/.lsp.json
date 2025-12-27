@@ -1,18 +1,36 @@
 {
-    "terraform": {
+  "terraform": {
+    "command": "terraform-ls",
+    "args": [
+      "serve"
+    ],
+    "extensionToLanguage": {
+      ".tf": "terraform",
+      ".tfvars": "terraform-vars",
+      ".tfstack.hcl": "terraform-stack",
+      ".tfcomponent.hcl": "terraform-stack",
+      ".tfdeploy.hcl": "terraform-deploy",
+      ".tfquery.hcl": "terraform-search"
+    },
+    "lspServers": {
+      "terraform": {
         "command": "terraform-ls",
-        "args": ["serve"],
+        "args": [
+          "serve"
+        ],
         "extensionToLanguage": {
-            ".tf": "terraform",
-            ".tfvars": "terraform-vars",
-            ".tfstack.hcl": "terraform-stack",
-            ".tfcomponent.hcl": "terraform-stack",
-            ".tfdeploy.hcl": "terraform-deploy",
-            ".tfquery.hcl": "terraform-search"
-        },
-        "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
-        "maxRestarts": 3
-    }
+          ".tf": "terraform",
+          ".tfvars": "terraform-vars",
+          ".tfstack.hcl": "terraform-stack",
+          ".tfcomponent.hcl": "terraform-stack",
+          ".tfdeploy.hcl": "terraform-deploy",
+          ".tfquery.hcl": "terraform-search"
+        }
+      }
+    },
+    "transport": "stdio",
+    "initializationOptions": {},
+    "settings": {},
+    "maxRestarts": 3
+  }
 }
