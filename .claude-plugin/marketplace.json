@@ -272,9 +272,25 @@
         "language-server",
         "infrastructure"
       ],
+      "lspServers": {
+        "terraform": {
+          "command": "terraform-ls",
+          "args": [
+            "serve"
+          ],
+          "extensionToLanguage": {
+            ".tf": "terraform",
+            ".tfvars": "terraform-vars",
+            ".tfstack.hcl": "terraform-stack",
+            ".tfcomponent.hcl": "terraform-stack",
+            ".tfdeploy.hcl": "terraform-deploy",
+            ".tfquery.hcl": "terraform-search"
+          }
+        }
+      },
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "Trevor Facer",
+        "email": "tdfacer@gmail.com"
       }
     }
   ]
