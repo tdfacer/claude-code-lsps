@@ -1,0 +1,12 @@
+{
+  "name": "terraform-ls",
+  "version": "0.1.0",
+  "description": "Official HashiCorp Terraform language server",
+  "author": {
+    "name": "Piebald LLC",
+    "email": "support@piebald.ai"
+  },
+  "repository": "https://github.com/hashicorp/terraform-ls",
+  "license": "MPL-2.0",
+  "keywords": ["terraform", "hcl", "hashicorp", "lsp", "language-server", "infrastructure"]
+}

@@ -1,6 +1,6 @@
 # Claude Code LSPs
 
-This repository contains a [Claude Code marketplace](https://code.claude.com/docs/en/plugin-marketplaces) with plugins that offer LSP servers for TypeScript, Rust, Python, Go, Java, Kotlin, C/C++, PHP, Ruby, C#, PowerShell, HTML/CSS, LaTeX, and BSL (1C:Enterprise).  [LSP servers](https://microsoft.github.io/language-server-protocol) provide powerful and familiar code intelligence features to IDEs, and now Claude Code directly.
+This repository contains a [Claude Code marketplace](https://code.claude.com/docs/en/plugin-marketplaces) with plugins that offer LSP servers for TypeScript, Rust, Python, Go, Java, Kotlin, C/C++, PHP, Ruby, C#, PowerShell, HTML/CSS, LaTeX, BSL, and Terraform.  [LSP servers](https://microsoft.github.io/language-server-protocol) provide powerful and familiar code intelligence features to IDEs, and now Claude Code directly.
 
 [**Claude Code is going to officially support LSP soon.**](https://www.reddit.com/r/ClaudeAI/comments/1otdfo9/lsp_is_coming_to_claude_code_and_you_can_try_it)  In 2.0.30 (October 31st) they adding the working beginnings of a system to run LSP servers from plugins automatically on startup, and an `LSP` tool (enable via `$ENABLE_LSP_TOOL=1`) that Claude can use to
 - Go to the definition for symbols (`goToDefinition`)
@@ -303,5 +303,28 @@ $env:PATH += ";$env:USERPROFILE\bsl-language-server\bin"
 ```
 
 The `bsl-language-server` executable needs to be in your PATH. Supports `.bsl` and `.os` files.
+
+</details>
+
+<details>
+<summary>Terraform (<code>terraform-ls</code>)</summary>
+
+Install **terraform-ls**, the official HashiCorp Terraform language server:
+```bash
+# macOS / Linux (Homebrew)
+brew install hashicorp/tap/terraform-ls
+
+# Arch Linux
+sudo pacman -S terraform-ls
+
+# Ubuntu/Debian (via HashiCorp repository)
+# Follow instructions at: https://www.hashicorp.com/official-packaging-guide
+# Package name: terraform-ls
+
+# Or download from releases
+# https://releases.hashicorp.com/terraform-ls/
+```
+
+The `terraform-ls` executable needs to be in your PATH. Supports `.tf`, `.tfvars`, `.tfstack.hcl`, `.tfcomponent.hcl`, `.tfdeploy.hcl`, and `.tfquery.hcl` files.
 
 </details>
